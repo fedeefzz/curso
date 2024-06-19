@@ -1,6 +1,11 @@
-Titulo: Diseño con HTML5
-Etiqueta: style Texto: 
-        header {
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño con HTML5</title>
+    <style>
+         header {
             padding: 20px;
             background-color: rgb(81, 81, 240);
         }
@@ -63,30 +68,38 @@ Etiqueta: style Texto:
             https://www.jasoft.org/Blog/post/css-como-igualar-la-altura-de-dos-cajas-flotadas-para-que-sean-iguales */
             overflow: hidden;
             }
+    </style>
+</head>
+<body>
+    <div>
+        <header>
+            <h1>Diseño con HTML5</h1>
+            <h2>Usando etiquetas semánticas</h2>
+        </header>
+    </div>
 
-Etiqueta: div
-Etiqueta: header
-Etiqueta: h1 Texto: Diseño con HTML5
-Etiqueta: h2 Texto: Usando etiquetas semánticas
+    <nav>
+        <ul>
+            <li class="menu_item"> </li>
+            <a href="#">Inicio</a>
 
-Etiqueta: nav
-Etiqueta: ul
-Etiqueta: li class="menu_item" Etiqueta: a href="#" Texto: Inicio
-Etiqueta: li class="menu_item" Etiqueta: a href="#" Texto: Sobre nosotros
-Etiqueta: li class="menu_item" Etiqueta: a href="#" Texto: Contacto
+            <li class="menu_item"></li>
+            <a href="#">Sobre nosotros</a> 
 
-Etiqueta: div class="container"
-Etiqueta: aside
-Etiqueta: h4 Texto: Aside
-Etiqueta: p Texto: Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eius laboriosam consequuntur vero voluptatem doloribus, reiciendis amet voluptate deleniti impedit!
+            <li class="menu_item"></li>
+            <a href="#">Contacto</a>
+        </ul>
+    </nav>
+    <div class="container"></div>
+    <aside><h4>Aside</h4></aside>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eius laboriosam consequuntur vero voluptatem doloribus, reiciendis amet voluptate deleniti impedit!</p>
 
-Etiqueta: article
-Etiqueta: section
-Etiqueta: h4 Texto: Sección 1
-Etiqueta: p Texto: Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eius laboriosam consequuntur vero voluptatem doloribus, reiciendis amet voluptate deleniti impedit!
-Etiqueta: section
-Etiqueta: h4 Texto: Sección 2
-Etiqueta: p Texto: Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eius laboriosam consequuntur vero voluptatem doloribus.
-
-Etiqueta: footer
-Etiqueta: p Texto:  -.- Footer -.-
+    <article>
+        <section>  <h4>Sección 1</h4>  </section>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eius laboriosam consequuntur vero voluptatem doloribus, reiciendis amet voluptate deleniti impedit!</p>
+        <section><h4>Sección 2</h4></section>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eius laboriosam consequuntur vero voluptatem doloribus.</p>
+    </article>
+    <footer><p>-.- Footer -.-</p></footer>
+</body>
+</html>
