@@ -1,6 +1,11 @@
-Flex 1 - Contenedor
-Etiqueta: style
-        /*Contenedor: Es el elemento padre que tendrá en su interior 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex 1 - Contenedor</title>
+    <style>
+         /*Contenedor: Es el elemento padre que tendrá en su interior 
         cada uno de los ítems "flexibles". 
         La mayor parte de las características de Flexbox se aplican 
         mediante un contenedor */
@@ -19,19 +24,22 @@ Etiqueta: style
             padding: 20px;
             font-size: 30px;
         }
+    </style>
+</head>
+<body>
+    <h3>Creación de un contenedor Flex (Flex Container)</h3>
+    <p>Los contenedores flexibles tendrán una orientación principal específica. Por defecto, es en horizontal (en fila).</p>
+    <p>De la misma forma, los contenedores flexibles tendrán una orientación secundaria, perpendicular a la principal. Si la principal es en horizontal, la secundaria será en vertical, y viceversa.</p>
 
+<div class="aaaa">
+<div>Item1</div>
+<div>Item2</div>
+<div>Item3</div>
+</div>
+<p>Los DIV "Itemx" son los hijos flexibles que tendrá el contenedor en su interior.</p>
+<br>
+<p><b>Importante:</b> por defecto, los elementos "hijos" van a tener la altura del contenedor padre
+</p>
 
-Etiqueta: h3 Texto: Creación de un contenedor Flex (Flex Container)
-
-Etiqueta: p Texto: Los contenedores flexibles tendrán una orientación principal específica. Por defecto, es en horizontal (en fila).
-   
-Etiqueta: p Texto: De la misma forma, los contenedores flexibles tendrán una orientación secundaria, perpendicular a la principal. Si la principal es en horizontal, la secundaria será en vertical, y viceversa.
-   
-Etiqueta: div class="aaaa"
-Etiqueta: div Texto: Item1
-Etiqueta: div Texto: Item2
-Etiqueta: div Texto: Item3
-Cierre div 
-
-Etiqueta: p Texto: Los DIV "Itemx" son los hijos flexibles que tendrá el contenedor en su interior.
-Etiqueta: p Texto: Importante: por defecto, los elementos "hijos" van a tener la altura del contenedor padre
+</body>
+</html>

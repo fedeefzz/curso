@@ -1,6 +1,10 @@
-Flex 2 - Dirección de los ejes
-
-Etiqueta: style
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex 2 - Dirección de los ejes</title>
+    <style>
         code {
             background-color: yellow;
             font-weight: bold;
@@ -53,48 +57,45 @@ Etiqueta: style
             margin: 10px;
             padding: 20px;
             font-size: 30px;
-        }        
+        }      
+    </style>
+</head>
+<body>
+    <h3>Flexbox | Dirección de los ejes</h3>
+<p>Existen dos propiedades principales para manipular la dirección y comportamiento de los ítems a lo largo del eje principal del contenedor.</p>
+<p>Una es <code>flex-direction</code>. Podemos modificar la dirección del eje principal del contenedor para que se oriente en horizontal (por defecto) o en vertical.</p>
+<h4>Horizontal</h4>
+<div class="flex-containerh">
+<div>Item1</div>
+<div>Item2</div>
+<div>Item3</div>
+</div>
 
-.
-Etiqueta: h3 Texto: Flexbox | Dirección de los ejes
+<h4>Vertical:</h4>
+<div class="flex-containerv">
+<div>Item1</div>
+<div>Item2</div>
+<div>Item3</div>
+</div>
 
-Etiqueta: p Texto: Existen dos propiedades principales para manipular la dirección y comportamiento de los ítems a lo largo del eje principal del contenedor.
-   
-Etiqueta: p Texto: Una es <code>flex-direction</code>. Podemos modificar la dirección del eje principal del contenedor para que se oriente en horizontal (por defecto) o en vertical. 
-Etiqueta: h4 Texto: Horizontal:
-Etiqueta: div class="flex-containerh"
-Etiqueta: div Texto: Item1
-Etiqueta: div Texto: Item2
-Etiqueta: div Texto: Item3
-Cierre div 
+<h4>Horizontal con row-reverse:</h4>
+<p>Además, también podemos incluir el sufijo <code>-reverse</code> para indicar que coloque los ítems en orden inverso.</p>
+<div class="flex-reverseh">
+<div>Item1</div>
+<div>Item2</div>
+<div>Item3</div>
+</div>
 
-Etiqueta: h4 Texto: Vertical:
-Etiqueta: div class="flex-containerv"
-Etiqueta: div Texto: Item1
-Etiqueta: div Texto: Item2
-Etiqueta: div Texto: Item3
-Cierre div 
-
-Etiqueta: h4 Texto: Horizontal con row-reverse:
-Etiqueta: p Texto: Además, también podemos incluir el sufijo <code>-reverse</code> para indicar que coloque los ítems en orden inverso. 
-   
-Etiqueta: div class="flex-reverseh"
-Etiqueta: div Texto: Item1
-Etiqueta: div Texto: Item2
-Etiqueta: div Texto: Item3
-Cierre div
-
-     
-
-Etiqueta: p Texto: <code>flex-wrap: wrap;</code> y <code>flex-wrap: wrap-reverse;</code> permiten el "desbordamiento" hacia la linea (o columna) siguiente. En la práctica, gracias a esto podemos tener tener contenedores multilinea / multicolumna. El valor por defecto es <code>flex-wrap: nowrap;</code>
-  
-Etiqueta: div class="flex-containerh" style="flex-wrap: wrap-reverse;"
-Etiqueta: div Texto: Item1
-Etiqueta: div Texto: Item2
-Etiqueta: div Texto: Item3
-Etiqueta: div Texto: Item4
-Etiqueta: div Texto: Item5
-Etiqueta: div Texto: Item6
-Cierre div
-
-Etiqueta: p>Esto nos permite tener un control muy alto sobre el orden de los elementos en una página.
+<p><code>flex-wrap: wrap;</code> y <code>flex-wrap: wrap-reverse;</code> permiten el "desbordamiento" hacia la linea (o columna) siguiente. En la práctica, gracias a esto podemos tener tener contenedores multilinea / multicolumna. El valor por defecto es <code>flex-wrap: nowrap;</code>
+  </p>
+  <div class="flex-containerh" style="flex-wrap: wrap-reverse;">
+<div>Item1</div>
+<div>Item2</div>
+<div>Item3</div>
+<div>Item4</div>
+<div>Item5</div>
+<div>Item6</div>
+  </div>
+  <p>Esto nos permite tener un control muy alto sobre el orden de los elementos en una página.</p>
+</body>
+</html>
