@@ -1,30 +1,32 @@
-CSS GRID Básico
-link 01_CSS_grid_basico.css
-
-Etiqueta: h2 Texto: CSS GRID Básico
-
-Etiqueta: p Texto: Esta es la configuración típica de Grid.
-Etiqueta: p Texto: La propiedad <mark><code>grid-template-columns</code></mark> define cantidad y tamaño de las columnas.
-
-Etiqueta: p Texto: La propiedad <mark><code>grid-template-rows</code></mark> define el tamaño de las filas.
-
-Etiqueta: p Texto: Hay que tener en cuenta que estas propiedades interactuan tanto con <mark><code>width</code></mark> como con <mark><code>height</code></mark>.
-
-Etiqueta: div class="grid-container">
-Etiqueta: div class="grid-item" Texto: 40<br>px
-Etiqueta: div class="grid-item" Texto: 20%
-Etiqueta: div class="grid-item" Texto: 1fr
-Etiqueta: div class="grid-item" Texto: 2fr
-Etiqueta: div class="grid-item" Texto: auto
-Etiqueta: div class="grid-item" Texto: 6
-Etiqueta: div class="grid-item" Texto: 7
-Etiqueta: div class="grid-item" Texto: 8
-Etiqueta: div class="grid-item" Texto: 9
-Etiqueta: div class="grid-item" Texto: 10
-Etiqueta: div class="grid-item" Texto: 11
-Etiqueta: div class="grid-item" Texto: 12
-Cierre div 
-
-Etiqueta: p Texto: Por supuesto, ademas de <b>px</b> se pueden utilizar otras medidas (<b>%</b>, <b>vw</b>, <b>mm</b>, etc). La unidad especial de Grid CSS <b>fr</b> (fraction) simboliza una fracción de espacio restante en el grid.
-
-Etiqueta: p Texto: Nota: probar la propiedad <mark><code>display: inline-grid;</code>.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID Básico</title>
+    <link rel="stylesheet" href="01_CSS_grid_basico.css">
+</head>
+<body>
+    <h2>CSS GRID Básico</h2>
+<p>Esta es la configuración típica de Grid.</p>
+<p>La propiedad <mark><code>grid-template-columns</code></mark> define cantidad y tamaño de las columnas.</p>
+<p>La propiedad <mark><code>grid-template-rows</code></mark> define el tamaño de las filas.</p>
+<p>Hay que tener en cuenta que estas propiedades interactuan tanto con <mark><code>width</code></mark> como con <mark><code>height</code></mark>.</p>
+<div class="grid-container">
+<div class="grid-item">40<br>px</div>
+<div class="grid-item">20%</div>
+<div class="grid-item">1fr</div>
+<div class="grid-item">2fr</div>
+<div class="grid-item">auto</div>
+<div class="grid-item">6</div>
+<div class="grid-item">7</div>
+<div class="grid-item">8</div>
+<div class="grid-item">9</div>
+<div class="grid-item">10</div>
+<div class="grid-item">11</div>
+<div class="grid-item">12</div>
+</div>
+<p>Por supuesto, ademas de <b>px</b> se pueden utilizar otras medidas (<b>%</b>, <b>vw</b>, <b>mm</b>, etc). La unidad especial de Grid CSS <b>fr</b> (fraction) simboliza una fracción de espacio restante en el grid.</p>
+<p>Nota: probar la propiedad <mark><code>display: inline-grid;</code>.</p>
+</body>
+</html>
