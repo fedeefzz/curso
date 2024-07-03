@@ -1,37 +1,34 @@
-Bootstrap - collapse
-
-Etiqueta: div class="container mt-3"
-    Etiqueta: h3 Texto: Mostrar / ocultar contenido
-    Etiqueta: p Texto: Click en los botones para ocultar o mostrar contenidos:
-
-    Etiqueta: button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo1" Texto: Párrafo
-            1
-
-    Etiqueta: button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo2" Texto: Párrafo
-            2
-
-    Etiqueta: button type="button" class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#imagen" Texto: Imagen      
-
-    Etiqueta: br Etiqueta: br>
-
-    Etiqueta: div id="demo1" class="collapse show"
-            Párrafo 1 <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap - collapse</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-3">
+        <h3>Mostrar / ocultar contenido</h3>
+        <p>Click en los botones para ocultar o mostrar contenidos:</p>
+        <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo1">1</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo2">2</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#imagen">Imagen</button>
+        <br> <br>
+        <div id="demo1" class="collapse show">
+            <p><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        Cierre div
-
-    Etiqueta: br>
-
-    Etiqueta: div id="demo2" class="collapse show"
-            Párrafo 2 <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa.</p>
+        </div>
+        <br>
+        <div id="demo2" class="collapse show">
+            <p><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        Cierre div
-
-    Etiqueta: br>
-
-        <!-- La imagen está escondida por defecto, no pertenece a la clase "show" -->
-    Etiqueta: div id="imagen" class="collapse">
-        Etiqueta: img src="https://okdiario.com/img/2018/06/24/oxigeno-arboles-655x368.jpeg" alt="Arbol" width="300"
-        Cierre div        
-Cierre div
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <br>
+        <div id="imagen" class="collapse">
+            <img src="https://okdiario.com/img/2018/06/24/oxigeno-arboles-655x368.jpeg" alt="Arbol" width="300">
+        </div>
+    </div>
+</body>
+</html>
