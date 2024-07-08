@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var frase=prompt("introduzca una frase")
+        var cantidad=0
+        for (i=0; i<frase.length;i++) {
+            if (frase[i]=="a"){
+            cantidad++
+                 }
+                 if (frase[i]=="e"){
+            cantidad++
+                 }
+                 if (frase[i]=="i"){
+            cantidad++
+                 }
+                 if (frase[i]=="o"){
+            cantidad++
+                 }
+                 if (frase[i]=="u"){
+            cantidad++
+                 }  
+         } 
+       
+        document.write("hay " + cantidad + "  vocales")
+    </script>
+</body>
+</html>
